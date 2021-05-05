@@ -1,3 +1,59 @@
    td {
     border: 1px rgb(0, 0, 0) solid;
  }
+ h1, footer {
+   padding: 100px;
+   margin: 0;
+}
+ header a {
+   color: white;
+   font-family: 'Indie Flower', cursive;
+   text-decoration: none;
+}
+
+a:visited, a:active {
+   text-decoration: none;
+   color: white;
+}
+
+ ul {
+   margin: 0;
+}
+
+ul li {
+   list-style-type: none;
+}
+
+nav {
+   position: fixed;
+   left: -25px;
+   width: calc(100% + 25px);
+   margin: 0;
+   padding: 10px 0;
+   background: #333;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 5px 20px;
+   font-size: 18px;
+   font-weight: normal;
+   border: 1px solid transparent;
+   color: white;
+   font-family: 'Indie Flower', cursive;
+}
+
+nav ul li:hover {
+   border: 1px solid white;
+   cursor: pointer;
+}
+
+nav ul li.left {
+   float: left;
+   margin-left: 25px;
+}
+
+nav ul li.right {
+   float: right;
+   margin-right: 25px;
+}
