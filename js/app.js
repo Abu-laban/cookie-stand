@@ -72,7 +72,7 @@ function makeHeaderRow() {
 }
 
 function makeFooterRow() {
-    var tableFoot = document.createElement('tfoot');
+    let tableFoot = document.createElement('tfoot');
     tableElement.appendChild(tableFoot);
     let tableRow = document.createElement('tr');
     tableFoot.appendChild(tableRow);
