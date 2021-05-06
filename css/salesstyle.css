@@ -1,6 +1,8 @@
    td {
     border: 1px rgb(0, 0, 0) solid;
  }
+ 
+
  h1, footer {
    padding: 100px;
    margin: 0;
@@ -56,4 +58,19 @@ nav ul li.left {
 nav ul li.right {
    float: right;
    margin-right: 25px;
+}
+
+fieldset {
+   border: 15px black solid;
+   width: 10%;
+   justify-content: center;
+   margin-top: auto;
+ }
+ 
+ table{
+   margin-bottom: 50px;
+}
+
+body{
+   background-color: rgb(201, 201, 201);
 }

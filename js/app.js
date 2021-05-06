@@ -45,6 +45,7 @@ Location.prototype.render = function () {
 
 }
     let divElement = document.getElementById('profiles');
+
     let articleElement = document.createElement('article');
     divElement.appendChild(articleElement);
 
@@ -71,8 +72,10 @@ function makeHeaderRow() {
 }
 
 function makeFooterRow() {
+    var tableFoot = document.createElement('tfoot');
+    tableElement.appendChild(tableFoot);
     let tableRow = document.createElement('tr');
-    tableElement.appendChild(tableRow);
+    tableFoot.appendChild(tableRow);
     let tableData = document.createElement('td');
     tableRow.appendChild(tableData);
     tableData.textContent = 'Totals';
@@ -114,3 +117,24 @@ Lima.numOfCustPerHour();
 Lima.cookiesPerCust();
 Lima.render();
 makeFooterRow();
+
+let newLocationForm = document.getElementById('newLocationForm');
+newLocationForm.addEventListener('submit', addLocation);
+function addLocation(event){
+    event.preventDefault();
+
+  let locationName = event.target.locationName.value;
+  let minCust = parseInt(event.target.minCust.value);
+  let maxCust = parseInt(event.target.maxCust.value);
+  let avgCookies = parseFloat(event.target.avgCookies.value);
+
+  let newLocation = new Location(locationName, minCust, maxCust, avgCookies);
+  
+  tableElement.deleteTFoot();
+
+  newLocation.numOfCustPerHour();
+  newLocation.cookiesPerCust();
+  newLocation.render();
+  
+  makeFooterRow();
+}
