@@ -1,175 +1,176 @@
-
-html, body {
-    margin: 0;
-    padding: 0;
+header nav {
+  color: #996633 !important;
+  background-color: #f1f1f1 !important;
+  display: block;
+  font-size: 18px !important;
 }
 
-h1, footer {
-    padding: 100px;
-    margin: 0;
+header nav ul {
+  line-height: 1.5;
+}
+header nav ul li {
+  display: inline;
+}
+nav ul li a {
+  padding: 8px 30px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+body {
+  background-color: #3a4a58;
+  color: #8c8c8c;
+  font-family: "Righteous", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
 }
 
-header a {
-    color: white;
-    font-family: 'Indie Flower', cursive;
-    text-decoration: none;
+.pageContainer {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-a:visited, a:active {
-    text-decoration: none;
-    color: white;
-}
-
-h1 {
-    display: inline-block;
-    padding: 100px;
-    font-family: 'Indie Flower', cursive;
-    color: #222;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.image1 {
-    padding-top: 65px;
-    padding-left: 200px;
-    margin: 0;
-}
-
-.brightblue {
-    background: #51e2f5;
-}
-
-.blueGreen {
-    background-color: #9df9ef;
-}
-
-.dustyWhite {
-
-    background: #edf7f6;
-}
-
-.pinkSand {
-    
-    background: #ffa8B6;
-}
-
-.darkSand {
-    background: #a28089;
-}
-
-h3 {
-    font-family: 'Indie Flower', cursive;
-    color: #edf7f6;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-p {
-    font-family: 'Indie Flower', cursive;
-    color: #333;
-}
-
-section {
-    padding: 40px 80px;
-    height: 300px;
-}
-
-ul {
-    margin: 0;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-nav {
-    position: fixed;
-    left: -25px;
-    width: calc(100% + 25px);
-    margin: 0;
-    padding: 10px 0;
-    background: #333;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 5px 20px;
-    font-size: 18px;
-    font-weight: normal;
-    border: 1px solid transparent;
-    color: white;
-    font-family: 'Indie Flower', cursive;
-}
-
-nav ul li:hover {
-    border: 1px solid white;
-    cursor: pointer;
-}
-
-nav ul li.left {
-    float: left;
-    margin-left: 25px;
-}
-
-nav ul li.right {
-    float: right;
-    margin-right: 25px;
+.textWhite {
+  color: white;
 }
 
 header {
-    background: #efefef;
-    height: 300px;
+  text-align: center;
 }
 
-section {
-    display: block;
+.pageIcon {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 15px;
+}
+.pageHeader {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: 2.1rem;
+  font-weight: 400;
 }
 
-h3 {
-    background: #51e2f5;
-    display: block;
+main {
+  background-color: #ffffff;
 }
 
-
-.dustyWhite img {
-    width: 15%;
+#introImg {
+  background-image: url(../img/chinook.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
 }
 
-.one {
-    margin-top: 150px;
-    float: left;
-    width: 33%;
+main section {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
-.two {
-    margin-top: 100px;
-    float: right;
-    width: 66%;
+h2 {
+  color: #996633;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+th {
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+td {
+  text-align: center;
+  padding: 10px 15px;
+}
+.trHeader {
+  background-color: #c4cdd6;
+  height: 50px;
+}
+tr:nth-child(odd) {
+  background-color: #e5e8ed;
 }
 
-.three {
-    margin-top: 150px;
-    float: left;
-    width: 33%;
+td a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
-.three h2{
-    font-size: 35px;
-    font-family: 'Indie Flower', cursive;
-    color: #a28089;
-}
-
-.four {
-    margin-top: 75px;
-    float: right;
-    width: 66%;
-}
-.four a{
-    color: #a28089;
-    font-size: xxx-large;
-    font-family: 'Indie Flower', cursive;
-    text-decoration: none;
+td a:hover {
+  color: #996633;
 }
 
-footer {
-    text-align: center;
+.specialItems {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+figure {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+figure caption {
+  text-align: center;
+}
+
+figure caption span {
+  display: block;
+  color: #333333;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+img {
+  max-width: 100%;
+}
+hr {
+  width: 60%;
+  border: 0.5px solid #ccc;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+p a {
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  color: #333333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
 }
