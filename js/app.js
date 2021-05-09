@@ -37,11 +37,11 @@ Location.prototype.render = function () {
     for (let i = 0; i < hours.length; i++) {
         let tdEl = document.createElement('td');
         tableRow.appendChild(tdEl);
-        tdEl.textContent = `${this.avgCookiesPerHour[i]}cookies`;
+        tdEl.textContent = `${this.avgCookiesPerHour[i]}`;
     }
     let tdEl = document.createElement('td');
     tableRow.appendChild(tdEl);
-    tdEl.textContent = `${this.totalCookies}cookies`;
+    tdEl.textContent = `${this.totalCookies}`;
 
 }
     let divElement = document.getElementById('profiles');
@@ -88,11 +88,11 @@ function makeFooterRow() {
         }
         let tdElement = document.createElement('td');
         tableRow.appendChild(tdElement);
-        tdElement.textContent = `${hourlyTotal}cookies`;
+        tdElement.textContent = `${hourlyTotal}`;
     }
     let tdElement = document.createElement('td');
     tableRow.appendChild(tdElement);
-    tdElement.textContent = `${Total}cookies`;
+    tdElement.textContent = `${Total}`;
 }
 
 makeHeaderRow();
@@ -137,4 +137,7 @@ function addLocation(event){
   newLocation.render();
   
   makeFooterRow();
+  document.getElementById("newLocationForm").reset();
 }
+tableElement.className = 'tablestyle';
+

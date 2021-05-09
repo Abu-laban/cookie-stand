@@ -38,6 +38,11 @@ body {
   margin-right: auto;
 }
 
+.page2Container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .textWhite {
   color: white;
 }
@@ -86,6 +91,27 @@ h2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.tablestyle{
+  table-layout:fixed;
+  width:100%;
+  border-spacing: 0;
+}
+.tablestyle th{
+  color: #333333;
+  font-weight: 900;
+  padding-left: 15px;
+  font-size: 15px;
+  overflow: hidden;
+}
+.tablestyle td{
+  overflow: hidden;
+  text-align: center;
+  color: #333333;
+  font-weight: 200;
+  font-size: 15px;
+  
+}
+
 table {
   width: 100%;
   border-spacing: 0;
