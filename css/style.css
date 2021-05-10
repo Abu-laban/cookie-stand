@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 header nav {
   color: #996633 !important;
   background-color: #f1f1f1 !important;
@@ -38,7 +43,7 @@ body {
   margin-right: auto;
 }
 
-.page2Container{
+.page2Container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -91,25 +96,24 @@ h2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.tablestyle{
-  table-layout:fixed;
-  width:100%;
+.tablestyle {
+  table-layout: fixed;
+  width: 100%;
   border-spacing: 0;
 }
-.tablestyle th{
+.tablestyle th {
   color: #333333;
   font-weight: 900;
   padding-left: 15px;
   font-size: 15px;
   overflow: hidden;
 }
-.tablestyle td{
+.tablestyle td {
   overflow: hidden;
   text-align: center;
   color: #333333;
   font-weight: 200;
   font-size: 15px;
-  
 }
 
 table {
@@ -199,4 +203,47 @@ footer p {
   margin-bottom: 30px;
   text-align: center;
   color: white;
+}
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+input {
+  width: 100%;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding: 10px;
+  border: none;
+  background-color: #c4cdd6;
+  color: #996633;
+  font-weight: 900;
+  font-size: medium;
+  border-radius: 5px;
+  width: 100%;
+}
+form {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: 50%;
+}
+legend {
+  text-align: center;
+  color: #996633;
+  font-weight: 900;
+  font-size: larger;
 }

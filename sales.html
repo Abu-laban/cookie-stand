@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salmon Cookies Sales</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salmon Cookies Sales</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="page2Container">
     </header>
@@ -26,27 +28,27 @@
       <section>
         <h2>Sales</h2>
         <div id="profiles">
-            
-          </div>
-          <form action="" id="newLocationForm" >
-            <fieldset>
-              <legend>New Location</legend>
 
-              <label for=locationName>Name:</label>
-              <input type="text" name="locationName" id="locationName"/>
-              
-              <label for=minCust>Minimum Customers:</label>
-              <input type="text" name="minCust" id="minCust"/>
+        </div>
+        <form action="" id="newLocationForm">
+          <fieldset>
+            <legend>New Location</legend>
 
-              <label for=maxCust>Maximum Customers:</label>
-              <input type="text" name="maxCust" id="maxCust"/>
+            <label for=locationName>Name:</label>
+            <input type="text" name="locationName" id="locationName" placeholder="Name" />
 
-              <label for=avgCookies>Average Cookies:</label>
-              <input type="text" name="avgCookies" id="avgCookies">
+            <label for=minCust>Minimum Customers:</label>
+            <input type="number" min="0" name="minCust" id="minCust" placeholder="Minimum" />
 
-              <button id="submit">Submit</button>
-            </fieldset> </br>
-          </section>
+            <label for=maxCust>Maximum Customers:</label>
+            <input type="number" min="0" name="maxCust" id="maxCust" placeholder="Maximum" />
+
+            <label for=avgCookies>Average Cookies:</label>
+            <input type="number" step="0.01" min="0" name="avgCookies" id="avgCookies" placeholder="Average">
+
+            <button id="submit">Submit</button>
+          </fieldset> </br>
+      </section>
     </main>
     <footer>
       <p class="tm-text-white tm-footer-text">
@@ -54,6 +56,7 @@
       </p>
     </footer>
   </div>
-    <script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>

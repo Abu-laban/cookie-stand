@@ -44,13 +44,13 @@ Location.prototype.render = function () {
     tdEl.textContent = `${this.totalCookies}`;
 
 }
-    let divElement = document.getElementById('profiles');
+let divElement = document.getElementById('profiles');
 
-    let articleElement = document.createElement('article');
-    divElement.appendChild(articleElement);
+let articleElement = document.createElement('article');
+divElement.appendChild(articleElement);
 
-    let tableElement = document.createElement('table');
-    articleElement.appendChild(tableElement);
+let tableElement = document.createElement('table');
+articleElement.appendChild(tableElement);
 
 function makeHeaderRow() {
     let tableRow = document.createElement('tr');
@@ -120,24 +120,24 @@ makeFooterRow();
 
 let newLocationForm = document.getElementById('newLocationForm');
 newLocationForm.addEventListener('submit', addLocation);
-function addLocation(event){
+function addLocation(event) {
     event.preventDefault();
 
-  let locationName = event.target.locationName.value;
-  let minCust = parseInt(event.target.minCust.value);
-  let maxCust = parseInt(event.target.maxCust.value);
-  let avgCookies = parseFloat(event.target.avgCookies.value);
+    let locationName = event.target.locationName.value;
+    let minCust = parseInt(event.target.minCust.value);
+    let maxCust = parseInt(event.target.maxCust.value);
+    let avgCookies = parseFloat(event.target.avgCookies.value);
 
-  let newLocation = new Location(locationName, minCust, maxCust, avgCookies);
-  
-  tableElement.deleteTFoot();
+    let newLocation = new Location(locationName, minCust, maxCust, avgCookies);
 
-  newLocation.numOfCustPerHour();
-  newLocation.cookiesPerCust();
-  newLocation.render();
-  
-  makeFooterRow();
-  document.getElementById("newLocationForm").reset();
+    tableElement.deleteTFoot();
+
+    newLocation.numOfCustPerHour();
+    newLocation.cookiesPerCust();
+    newLocation.render();
+
+    makeFooterRow();
+    document.getElementById("newLocationForm").reset();
 }
 tableElement.className = 'tablestyle';
 
